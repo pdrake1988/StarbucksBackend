@@ -2,13 +2,13 @@ package org.pdrake.starbucksbackend.entity;
 
 import java.util.ArrayList;
 
-public class Cart {
+public class Orders {
     private Integer id;
     private Integer userId;
     private Integer storeId;
-    private ArrayList<ItemRef> products = new ArrayList<>();
+    private ArrayList<OrderRef> products = new ArrayList<>();
 
-    public Cart(Integer userId, Integer storeId) {
+    public Orders(Integer userId, Integer storeId) {
         this.userId = userId;
         this.storeId = storeId;
     }
