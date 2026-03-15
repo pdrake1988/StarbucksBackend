@@ -1,3 +1,8 @@
 spring:
   application:
     name: StarbucksBackend
+  security:
+    oauth2:
+      resource server:
+        jwt:
+          issuer-uri: ${TOKEN_URL}
